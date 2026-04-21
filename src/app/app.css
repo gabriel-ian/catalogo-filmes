@@ -1,0 +1,25 @@
+.btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+.active {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: center; 
+  gap: 10px;
+  margin-bottom: 20px; 
+}

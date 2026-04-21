@@ -1,0 +1,21 @@
+.listagem-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza horizontalmente */
+  justify-content: center; /* centraliza verticalmente se tiver altura definida */
+  padding: 20px;
+}
+
+.listagem-container h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap; /* permite quebrar linha */
+  justify-content: center; /* centraliza os cards */
+  gap: 20px; /* espaço entre os cards */
+  max-width: 1200px; /* largura máxima da área */
+}

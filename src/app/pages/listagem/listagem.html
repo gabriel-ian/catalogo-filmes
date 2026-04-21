@@ -1,0 +1,16 @@
+<div class="listagem-container">
+  <h2>Catálogo de Filmes</h2>
+
+  <div class="cards">
+    @for (filme of filmes; track filme.nome) {
+      <app-card-filme
+        [nome]="filme.nome"
+        [genero]="filme.genero"
+        [duracao]="filme.duracao"
+        [classificacao]="filme.classificacao"
+        [imagem]="filme.imagem"
+        (favoritar)="adicionarFavorito($event)">
+      </app-card-filme>
+    }
+  </div>
+</div>

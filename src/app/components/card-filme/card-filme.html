@@ -1,0 +1,9 @@
+<div class="card">
+  <img [src]="imagem" alt="{{ nome }}" class="poster">
+  <h3>{{ nome }}</h3>
+  <p>Gênero: {{ genero }}</p>
+  <p>Duração: {{ duracao }}</p>
+  <p>Classificação: {{ classificacao }}</p>
+
+  <button (click)="onFavoritar()">Favoritar</button>
+</div>

@@ -1,0 +1,41 @@
+/* Container centralizado */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background: #f4f4f4; /* cor neutra */
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Título principal */
+.home-container h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Texto de boas-vindas */
+.home-container p {
+  font-size: 1rem;
+  max-width: 600px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Botão simples */
+.home-container .btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.home-container .btn:hover {
+  background: #0056b3;
+}

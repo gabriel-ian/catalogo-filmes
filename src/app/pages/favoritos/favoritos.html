@@ -1,0 +1,18 @@
+<div class="favoritos-container">
+  <h2>Filmes Favoritos</h2>
+
+  <div *ngIf="favoritos.length === 0">
+    Nenhum filme favoritado.
+  </div>
+
+  <ul>
+    <li *ngFor="let filme of favoritos">
+      <strong>{{ filme.nome }}</strong>  
+      <span> - {{ filme.genero }} | {{ filme.duracao }} | {{ filme.classificacao }}</span>
+      <button (click)="remover(filme)">Remover</button>
+    </li>
+  </ul>
+
+  <p>Total de itens: {{ favoritos.length }}</p>
+  <button class="limpar-btn" (click)="limparLista()">Limpar todos</button>
+</div>
